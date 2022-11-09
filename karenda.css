@@ -1,0 +1,196 @@
+/* This is a CSS file */
+body{background-color: #FFFACD;}
+
+
+html{
+  scroll-behavior: smooth;
+}
+.button:hover {
+  background: lightcoral;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+.modal-header {
+  background: lightblue;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.modalClose {
+  font-size: 2rem;
+}
+
+.modalClose:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+     font-size: 2rem;
+  padding: 10px 20px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+.monthAndYear{
+    position: relative;
+    color:#000000;
+  
+}
+.button-container-calendar {
+  position: relative;
+  margin-bottom: 1em;
+  overflow: hidden;
+  clear: both;
+}
+#previous {
+  float: left;
+  font-weight: 500;
+}
+#next {
+  float: right;
+  font-weight: 500;
+}
+.footer-container-calendar {
+  margin-top: 1em;
+  border-top: 1px solid #dadada;
+  padding: 10px 0px;
+}
+.button-container-calendar button {
+  cursor: pointer;
+  display: inline-block;
+  zoom: 1;
+  background-color: #6495ED;
+  color: #fff;
+  border: 1px solid #6495ED;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 13px;
+}
+.modal-body{color:#000000;
+  background:#fff;}
+
+
+.date-picker{ font-weight: bold;
+  color:#000000;
+  background:#fff;}
+.date-picker.yotei{ font-weight: bold;
+  color: #fff;
+  background: #993399; }
+.date-picker.yotei span{border-bottom: 2px solid currentColor;}
+
+
+.date-picker.selected {
+  font-weight: bold;
+  color: #fff;
+  background: #003366;
+}
+.date-picker.selected span {
+  border-bottom: 2px solid currentColor;
+}
+
+
+/* 日曜 */
+.date-picker.sun {
+color: red;
+}
+/* 土曜 */
+.date-picker.stu {
+color: blue;
+}
+
+
+/*
+
+background-color: #ff8082;
+左記号　CSSのメモ機能は
+ //ではなく
+/**/
+/*でするっぽい
+
+
+*/
+tr{font-family:"SimSun",Meiryo,sans-serif;
+text-align:left;
+ font-size: 1rem;
+color:#fff;
+
+border-width:3px;border-color: #000000;
+}
+
+#year{
+    text-align: center;
+    margin-top: -50px;
+}
+#month{
+    text-align: center;
+    margin-top: -5px;
+    margin-left: 18px;
+}
+#kasen{
+    text-decoration: none;
+    color: black
+}
+
+#modoru{
+    font-size: 17px;
+    border: solid 2px #000;
+    width: 70px;
+    height: fit-content;
+    text-align: center;
+    background-color: yellow;
+}
+
+#saikinNoYotei{
+    font-size: 23px;
+    border: solid 3px #006400;
+    padding: 16px;
+    margin-top: -20px;
+}
+
+#yoteiMonth{
+    height: 25px;
+    width: 55px;
+    font-size: 16px;
+}
+
+#yoteiDate{
+    height: 25px;
+    width: 55px;
+    font-size: 16px;
+}

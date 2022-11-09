@@ -1,0 +1,17 @@
+/* This is a CSS file */
+body{background-color: #FAFAD2;}
+
+#modoru{font-family: serif;font-size: large;  font-weight: bold;
+    width:80px;height: 20px;background-color:#ffff88;
+    border-style:groove ;border-width:3px;border-color: #000000; color: black; text-align: center;
+}
+
+#kasen{
+    text-decoration-line: none;
+}
+
+#minna{
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+}

@@ -1,0 +1,96 @@
+/* This is a CSS file */
+body{ background-color:#ccffcc;text-align: center;}
+
+html{
+  scroll-behavior: smooth;
+}
+#modoru{font-family: serif;font-size: large;font-weight: bold;
+    width:100px;height: 20px;background-color:#ffff88;
+    border-style:groove ;border-width:3px;border-color: #000000;
+}
+
+#b1{
+  margin: 1em 0;
+  padding: 1em 1em 1em;
+  position: relative;
+  border: 2px solid #ff9900;
+  background-color: #ffdead;
+}
+
+.title-box2-title{
+  position: absolute;
+  top: -0.8em;
+  left: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #ff9900;
+  color: #fff;
+  padding: 0 0.5em;
+}
+
+#b1 p{
+  margin: 0;
+  padding: 0;
+}
+
+
+#charactor{margin-right: 50px;
+           margin-top: 50px;
+}
+#menu {
+    text-align: center;
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+}
+#menu button {
+    text-align: center;
+    width:90%;
+    height:30%;
+    padding:5%;
+    margin-bottom:10px;
+    border-radius:10px;  
+    background-color:#ffff66;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white,
+    -2px 2px 0 white, 2px -2px 0 white,
+    0px 2px 0px white, 0px -2px 0px white,
+    -2px 0px 0px white, 2px 0px 0px white;
+}
+
+#RealtimeClockArea2 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#top {
+    color: blue;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 30px;
+    font-weight: 1030;
+    text-shadow: 2px 2px 0 #8EF1FF, -2px -2px 0 #8EF1FF,
+              -2px 2px 0 #8EF1FF, 2px -2px 0 #8EF1FF,
+              0px 2px 0 #8EF1FF,  0-2px 0 #8EF1FF,
+              -2px 0 0 #8EF1FF, 2px 0 0 #8EF1FF;
+}
+
+.task_submit{
+    width: 70px;
+    height: 40px;
+    font-weight: 950;
+    font-size: 17px;
+    color: black;
+    background-color: #87CEFA;
+    border: solid black 1px;
+    text-shadow: 1px 1px 0 white, -1px -1px 0 white,
+                 -1px 1px 0 white, 1px -1px 0 white,
+                 0 1px 0 white, 0 -1px 0 white,
+                 -1px 0px 0px white, 2px 0 0 white;
+}
+
+#kasenn{
+    text-decoration: none;
+    color: black;
+}

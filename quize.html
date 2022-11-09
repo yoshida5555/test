@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>クイズ</title>
+    <script src="../../../components/loader.js"></script>
+    <link rel="stylesheet" href="../../../components/loader.css">
+    <script src="../../../ajs/education.js" defer></script>
+
+
+    <link rel="stylesheet" href="quize.css">
+    <script src="quize.js" defer></script>
+
+    <style>
+        #modoru {
+            font-family: serif;
+            font-size: large;
+            font-weight: bold;
+            width: 80px;
+            height: 20px;
+            background-color: #ffff88;
+            border-style: groove;
+            border-width: 3px;
+            border-color: #000000;
+            color: black;
+            text-align: center;
+        }
+    </style>
+
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>クイズゲーム</title>
+
+</head>
+
+
+
+<body onkload=quizu()>
+    <a href="#" onclick="history.back(); return false;" id="kasen">
+        <div class="material-icons" id="modoru">
+            戻る
+        </div>
+    </a>
+
+    <div id="sceneTop" class="top screen">
+        <h1>4択クイズ</h1>
+        <hr style="border-width:1px 180px;margin-left:-35%; margin-top:-10%; border-color:blue">
+        <button id="btnStart">Game  Start</button>
+    </div>
+
+    <div id="sceneGame" class="game screen">
+        <!--<h1>ゲーム画面</h1>-->
+        <p id="textQuestion"></p>
+        <img src="IMG_0415.jpg" id="kusa">
+        <img src="copy_memo_sample.png" id="kyara" class="keyframe0 animation">
+
+        <ul id="listAnswer"></ul>
+    </div>
+
+    <div id="sceneResult" class="result screen">
+        <h1 style="margin-top:-10%">結果</h1>
+        <hr style="border-width:1px 180px;margin-left:-35%; margin-top:-10%; border-color:	#CC00FF	">
+        <!--必要なら装飾
+        <img src="IMG_0478.jpg" id="husen1">
+        <img src="IMG_0477.jpg" id="husen2">
+-->
+        <button onclick="alert('koyukoto')" id="momo"><img src="copy_memo_sample.png"></button>
+        <p id="seikai">5問中　<span id="numResult"></span>問　正解</p>
+
+        <div id="miss"> </div>
+        
+
+
+        <button id="btnReset">もう1回</button>
+        <a href="../../../index.html"><button id="owari">終了</button></a>
+
+        <div class="container">
+            <div class="confetti"><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

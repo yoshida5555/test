@@ -1,0 +1,112 @@
+/* This is a CSS file */
+/* 非表示 */
+.is-hide {
+    display: none;
+}
+/* ローディング画面をフェードアウト */
+.fadeout-bg {
+    transition-property: opacity;
+    transition-delay: .9s;
+    transition-duration: .8s;
+    opacity: 0;
+    pointer-events: none;
+}
+/* ローダーをフェードアウト */
+.fadeout-loader {
+    transition-property: opacity;
+    transition-delay: .9s;
+    transition-duration: .3s;
+    opacity: 0;
+    pointer-events: none;
+}
+/* ローディング画面 */
+#loader-bg {
+    background: #ffffff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+#loader {
+    height: 60px;
+    left: 25%;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: fixed;
+    top: 25%;
+    width: 60px;
+}
+#loader p {
+    color: #454545;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+}
+#loader p img {
+    display: inline-block;
+}
+#modoru{
+    font-family: serif;
+    font-size: large;
+    font-weight: bold;    
+    width: 80px;
+    height: 20px;
+    background-color:#ffff88;   
+    border-style: groove;
+    border-width: 3px;
+    border-color: #000000;
+    color: #000000; 
+    text-align: center;
+    margin: 3% 3%;
+}
+
+#kasen{
+    text-decoration: none;
+    color: black;
+}
+
+html, body {
+  font-family: 'Roboto mono';
+  font-size: 16px;
+  background-color: #FFF3C4;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#container {
+  background-color: #66ccff;
+  width: 300px;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+#time {
+  color: #1e90ff;
+  background-color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  margin: .5rem;
+}
+
+#buttons {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#start, #stop, #reset {
+  font-size: 1.5rem;
+  border-radius: .3rem;
+  box-shadow: 0 0 20px rgba(77, 78, 79, 0.25);
+}
+
+

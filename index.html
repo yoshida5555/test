@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <title>ホーム画面</title>
+
+
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <!----<script src="ajs/education.js"></script>----->
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <script src="Tokei.js" defer></script>
+
+    <script>
+        function click() {
+            cacha = document.getElementById("cacha");
+            cacha.play();
+        }
+    </script>
+
+    <style>
+        #wrapper {
+            height: 155px;
+            width: 290px;
+            margin-left: 12px;
+            overflow-y: scroll;
+        }
+        
+        ul {
+            margin-left: -50px;
+        }
+    </style>
+</head>
+
+<!------click()---音楽いったんOFFにしました--->
+
+<body onload=mokuhyouYomikomi(),showClock2()>
+
+    <audio src="hanatabatome-pururate.mp3" id="cacha" style="display:none" loop controls></audio>
+
+
+
+    <!--<h2 id="top">エスタディア</h2>-->
+
+    <h3>
+        <p id="RealtimeClockArea2"></p>
+    </h3>
+
+
+    <div id="b1">
+        <!--<div id="goalBox"><span id="goal"></span></div>-->
+
+        <div class="title-box2-title">目標</div>
+        <p><span id="goal" style="font-size:20px"></span></p>
+    </div>
+
+    <div id="menu"onclick="click()">
+        <a href="gakusyu/gamehome.html"><button>学習</button></a>
+        <a href="karenda/karenda.html"><button>カレンダ</button></a>
+        <a href="settei/settei.html" ><button>設定</button></a>
+    </div>
+
+    <div align="left" id="toDo">
+        <form>
+            <input class="task_value" type="text" placeholder="TODO入力" style="border: solid 2px #000;width: 150px;height: 40px;font-size:20px">
+            <button class="task_submit" type="button">追加</button>
+        </form>
+        <ul class="task_list" id="wrapper" name="toDo" style="background-color: #C2EEFF;border: 2px #005FFF dashed; font-size: 20px; width: 80%">
+            <form id="todo"></form>
+        </ul>
+    </div>
+</body>
+
+</html>

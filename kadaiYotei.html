@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>設定</title>
+    <script src="../../components/loader.js"></script>
+    <link rel="stylesheet" href="../../components/loader.css">
+    <script src="../../ajs/education.js" defer></script>
+    
+    <script src="kankeiset.js" defer></script>
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+    </script>
+</head>
+<body>
+    <p><a href="#" onclick="history.back(); return false;">一つ前のページへ戻るボタン</a></p>
+
+  <h1>なんかできるといいね</h1>
+
+   <table border="1" id="meigen">
+        <caption>お小遣いの記録</caption>
+        <tr>
+            <th>ID</th>
+            <th>名言</th>
+            <th>金額</th>
+           
+        </tr>
+    </table>
+<form id="insertForm" autocomplete="off">
+        名目：<input type="text" name="title"><br>
+        人：<input type="text" name="people" ><br>
+       
+        <button type="button" onclick="insert()">登録</button> 
+    </form>
+</body>
+</html>

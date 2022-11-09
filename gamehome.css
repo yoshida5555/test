@@ -1,0 +1,59 @@
+/* This is a CSS file */
+body{background-color: #FFCC66;}
+
+html{
+  scroll-behavior: smooth;
+}
+#modoru{font-family: serif;font-size: large;font-weight: bold;
+    width:80px;height: 20px;background-color:#ffff88;
+    border-style:groove ;border-width:3px;border-color: #000000; color: black; text-align: center;
+}
+#kasen{
+    text-decoration-line: none;
+}
+
+#kaisi{
+    padding: 10px;
+    position: absolute;
+    left: 133px;
+    bottom: 50px;
+    height: 90px;
+    width: 110px;
+    font-size: 27px;
+    background-color: #FF0000;
+    color: white;
+    font-weight: 800;
+}
+
+.perfect-circle {
+	width: 372px;
+	height: 380px;
+	border-radius: 50%;
+	background: #FAFAD2;
+    position: absolute;
+    right: 2px;
+    top: 70px;
+    z-index: 3;
+}
+
+#momo{
+    position: absolute;
+    left: 130px;
+    top: 130px;
+}
+
+#room{
+    position: absolute;
+    bottom: 78px;
+    left: -10px;
+    background-color: #FFCC66;
+    border-color: #FFCC66;
+}
+
+#room2{
+    position: absolute;
+    bottom: 78px;
+    right: -10px;
+    background-color: #FFCC66;
+    border-color: #FFCC66;
+}

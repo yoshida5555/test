@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>カレンダー</title>
+    <script src="../components/loader.js"></script>
+    <link rel="stylesheet" href="../components/loader.css">
+    <script src="../ajs/education.js" defer></script>
+    
+    <style>
+        #modoru {
+            font-family: serif;
+            font-size: large;
+            font-weight: bold;
+            width: 80px;
+            height: 20px;
+            background-color: #ffff88;
+            border-style: groove;
+            border-width: 3px;
+            border-color: #000000;
+            color: black;
+            text-align: center;
+        }
+    </style>
+
+
+
+
+    <script src="karenda.js" defer></script>
+    <link rel="stylesheet" href="karenda.css">
+
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        th,
+        td {
+            padding: 10px 15px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body onkload=showClock2()>
+    <a href="#" onclick="history.back(); return false;" id="kasen">
+        <div class="material-icons" id="modoru">
+            戻る
+        </div>
+    </a>
+    <form name="yotei">
+        <div class="footer-container-calendar">
+            <label for="month" style="font-size: 20px;">日付指定：</label>
+            <select id="yoteiMonth"><option value=0>1月</option><option value=1>2月</option> <option value=2>3月</option><option value=3>4月</option><option value=4>5月</option><option value=5>6月</option><option value=6>7月</option><option value=7>8月</option><option value=8>9月</option><option value=9>10月</option><option value=10>11月</option><option value=11>12月</option>
+            </select>
+            <select id="yoteiDate"><option value=0>1日</option><option value=1>2日</option><option value=2>3日</option><option value=3>4日</option><option value=4>5日</option><option value=5>6日</option><option value=6>7日</option><option value=7>8日</option><option value=8>9日</option><option value=9>10日</option><option value=10>11日</option><option value=11>12日</option><option value=12>13日</option><option value=13>14日</option><option value=14>15日</option><option value=15>16日</option><option value=16>17日</option><option value=17>18日</option><option value=18>19日</option><option value=19>20日</option><option value=20>21日</option><option value=21>22日</option><option value=22>23日</option><option value=23>24日</option><option value=24>25日</option><option value=25>26日</option><option value=26>27日</option><option value=27>28日</option><option value=28>29日</option><option value=29>30日</option><option value=30>31日</option>
+            </select>
+            <br>
+            <div style="font-size: 20px;">予定入力：
+                <input type="text" placeholder="１０文字以内です" size="20" maxlength="20" name="Yotei1" style="height: 20px; font-size: 13px;">
+                <button onclick="sellect()" style="height: 25px; width: 60px; font-size: 13px; font-weight: 500;">指定</button>
+            </div>
+        </div>
+    </form>
+
+    <h2 style="color: #006400; margin-top: -2px;">最近の予定</h2>
+    <div id="saikinNoYotei"></div>
+
+    <div class="button-container-calendar"><br>
+        <button id="previous" onclick="previous()"><先月</button>
+        <button id="next" onclick="next()">次月></button>
+    </div>
+    <div id="year"></div>
+    <h2 id="month"></h2>
+
+    <table id='data-table'>
+        <div class="data-table-head">
+
+            <head>
+                <tr>
+                    <th style="background-color: red;">日</th>
+                    <th style="background-color: #999999">月</th>
+                    <th style="background-color: #999999">火</th>
+                    <th style="background-color: #999999">水</th>
+                    <th style="background-color: #999999">木</th>
+                    <th style="background-color: #999999">金</th>
+                    <th style="background-color: #6495ED;">土</th>
+                </tr>
+            </head>
+        </div>
+        <tbody id="tbodyID"></tbody>
+    </table>
+
+    <div id="easyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>予定</h1>
+                <span class="modalClose">×</span>
+            </div>
+            <div id="yoteiResult" class="modal-body" style="font-size: 25px;">
+
+            </div>
+            <button onclick="yoteiSakujo()" style="width: 100px; height: 30px; font-size: 15px;"><!--CSS-->予定削除</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

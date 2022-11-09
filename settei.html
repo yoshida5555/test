@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>設定</title>
+    <script src="../components/loader.js"></script>
+    <link rel="stylesheet" href="../components/loader.css">
+    <script src="../ajs/education.js" defer></script>
+    
+    <link rel="stylesheet" href="../index.css">
+    <style>
+        #modoru {
+            font-family: serif;
+            font-size: large;
+            font-weight: bold;
+            width: 80px;
+            height: 20px;
+            background-color: #ffff88;
+            border-style: groove;
+            border-width: 3px;
+            border-color: #000000;
+            color: black;
+            text-align: center;
+        }
+    </style>
+
+
+    <script src="setting.js" defer></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <a href="../index.html" id="kasen">
+        <div class="material-icons" id="modoru">
+            戻る
+        </div>
+    </a>
+    <h1>
+        <font size="7">設定画面</font>
+    </h1>
+    <hr>
+    <h3>
+        <font size="4">目標設定</font>
+    </h3>
+
+    <form name="mokuhyou"> <input type="text" placeholder="１０文字以内です" 　size="20" maxlength="20" name="mokuhyou1">
+        <button id="mokuhyouSet" onclick="Hyoji()">保存</button></form>
+
+    <input type="button" value="関係者入口" onclick="gate();">
+
+
+
+
+
+
+</body>
+
+</html>

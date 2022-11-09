@@ -1,0 +1,25 @@
+/* This is a CSS file */
+body{background-color: #FAFAD2;}
+
+
+#modoru{font-family: serif;font-size: large;  font-weight: bold;
+    width:80px;height: 20px;background-color:#ffff88;
+    border-style:groove ;border-width:3px;border-color: #000000; color: black; text-align: center;
+}
+
+#kasen{
+    text-decoration-line: none;
+}
+
+#sentaku{
+    text-align: center;
+    width: 90%;
+    height: 90px;
+    margin: 30px 16px;
+    color: black;
+    font-size: 60px;
+    letter-spacing: 0.5em;
+    font-weight: 500;
+    background-color: white;
+    border:solid thick #33CC33;
+}

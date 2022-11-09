@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>Stopwatch</title>
+    <link rel='stylesheet' type='text/css' href='stopwatch.css'>
+ 
+</head>
+<body>
+   <div id="loader-bg" class="is-hide">
+    <div id="loader" class="is-hide">
+        <p>
+            <img src="Load.gif"><br>
+            
+        </p>
+    </div>
+</div>
+
+    <a href="myroom.html" id="kasen">
+        <div class="material-icons" id="modoru">
+            戻る
+        </div>
+    </a>
+<h1 style="padding-left:3%; border-bottom:solid 3px #005FFF">ストップウォッチ</h1>
+
+  <div id="container">
+    <div id="time">00:00:00</div>
+    <div id="buttons">
+      <input id="start" type="button" value="スタート">
+      <input id="stop" type="button" value="ストップ">
+      <input id="reset" type="button" value="リセット">
+    </div>
+  </div>  
+
+  <script src='stopwatch.js'></script>
+</body>
+</html>
